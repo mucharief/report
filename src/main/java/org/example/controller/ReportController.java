@@ -1,7 +1,7 @@
 package org.example.controller;
 
 import org.example.dto.EmployeeSalesDTO;
-import org.example.dto.ProductDTO;
+import org.example.dto.ProductSalesDTO;
 import org.example.dto.SalesDTO;
 import org.example.repository.SalesRepository;
 import org.example.service.*;
@@ -33,7 +33,7 @@ public class ReportController {
     }
 
     @GetMapping("/report-product")
-    public List<ProductDTO> getReportProduct() {
+    public List<ProductSalesDTO> getReportProduct() {
         return salesService.reportProduct();
     }
 

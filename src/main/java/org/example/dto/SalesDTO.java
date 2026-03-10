@@ -10,7 +10,7 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 public class SalesDTO {
-    private String productName;
     private String month;
-    private BigDecimal total;
+    private String productName;
+    private BigDecimal totalSales;
 }

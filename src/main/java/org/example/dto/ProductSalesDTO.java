@@ -4,12 +4,13 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.time.LocalDate;
+import java.math.BigDecimal;
 
 @Getter
 @Setter
 @AllArgsConstructor
-public class ProductDTO {
-    private String productName;
+public class ProductSalesDTO {
     private String month;
+    private String productName;
+    private BigDecimal monthlyTotal;
 }
